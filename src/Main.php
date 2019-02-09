@@ -13,7 +13,7 @@ class Main
 
     private function plural($str, $symbol): string
     {
-        if (substr($str, -1) === 's') {
+        if (substr($str, -1) === $symbol) {
             return $str;
         }
 
