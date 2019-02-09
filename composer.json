@@ -1,0 +1,32 @@
+{
+  "name": "bezrukov/php-pipeline",
+  "bin": ["bin/php-package"],
+  "description": "",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Vladimir Bezrukov",
+      "email": "virtus.at.honor@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "scripts": {
+    "phpcs": "phpcs",
+    "phpcbf": "phpcbf",
+    "phpunit": "phpunit",
+    "test": "phpunit tests"
+  },
+  "autoload": {
+    "psr-4": {
+      "Php\\pipeline\\": "src",
+      "Php\\pipeline\\Tests\\": "tests"
+    }
+  },
+  "require": {
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*",
+    "squizlabs/php_codesniffer": "*",
+    "codeclimate/php-test-reporter": "dev-master"
+  }
+}
